@@ -4,6 +4,9 @@ const figets = ["Pop Open", "Spin", "Spin Faster",
 const btn = document.getElementById("btn");
 const fidget = document.querySelector(".fidget");
 
+window.onload = document.getElementById('loader').style.display = "none";
+window.onload = document.getElementById('clean').style.display = "none";
+
 btn.addEventListener("click", function(){
     const randomFiget = getRandomFiget();
     fidget.textContent = figets[randomFiget];
@@ -64,3 +67,13 @@ function getRandomFiget(){
     return Math.floor(Math.random() * figets.length);
 }
 
+function showDiv() {
+    document.getElementById('loader').style.display = "block";
+    document.getElementById('clean').style.display = "block";
+    document.getElementById('done').style.display = "none";
+    setTimeout(function () {
+        document.getElementById('loader').style.display = "none";
+        document.getElementById('done').style.display = "block";
+        document.getElementById('clean').style.display = "none";
+    }, 5000);
+ }
