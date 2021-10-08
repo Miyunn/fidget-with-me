@@ -41,6 +41,7 @@ main {
     padding: 1rem;
     border-radius: var(--radius);
     margin-bottom: 2.5rem;
+    width: 350px;
 }
 
 .btn-hero {
@@ -64,3 +65,36 @@ main {
     color: var(--clr-white);
     background: var(--clr-black);
 }
+
+.ptxt {
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background: rgba(0, 0, 0, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 10px;
+    width: 350px;
+  }
+  
+  .progress-value {
+    animation: load 5s normal forwards;
+    box-shadow: 0 10px 40px -10px rgb(0, 0, 0);
+    border-radius: 100px;
+    background: rgb(0, 0, 0);
+    height: 10px;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
