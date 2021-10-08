@@ -22,6 +22,7 @@ btn.addEventListener("click", function(){
         document.querySelector(".spinner").style.background ="url('img/zspin.png') center center";
         document.querySelector(".spinner").style.width = "210px"
         document.querySelector(".spinner").style.height = "212px"
+        btn.textContent = "Fidget Me!"
 
         //Spin
         if(randomFiget == 1){ 
