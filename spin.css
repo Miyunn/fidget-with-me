@@ -47,11 +47,8 @@
   }
 
   .loading-container {
-    margin: 0 auto;
-    text-align: center;
     position: relative;
-    margin-top: 30vh;
-    transform: translateY(-50%);
+    margin-top: 65vh;
   }
   
   .spinner {
@@ -62,6 +59,10 @@
     background-size: contain;
     /* transition-origin: 50% 50%; */
     animation: still;
+    z-index: 10;
+    position: absolute;
+    margin-top: -50vh;
+
   }
 
   .loading-text {
